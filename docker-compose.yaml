@@ -4,7 +4,7 @@ networks:
   # Intence of this project is to run this Nginx with the other services on the same docker host.
   # So to let them communicate, we have to keep all the services in the same network.
   # The common network should be created before creating any services.
-  # Use the init.sh script for that.
+  # Use the init-global-network.sh script for that.
   global-net:
     name: ${GLOBAL_NETWORK:-global-network}
     external: true
